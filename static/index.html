@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/Net.js"></script>
+    <script src="/js/main.js"></script>
+    <title>Mongo Manager</title>
+    <style>
+        #databases,
+        #collections {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+            clear: both;
+        }
+
+        .singleDatabase,
+        .singleCollection {
+            color: white;
+            cursor: pointer;
+            background-color: green;
+            border-bottom: 2px solid red;
+            font-size: 30px;
+        }
+
+        #addDatabase,
+        #removeDatabase,
+        #addCollection,
+        #removeCollection {
+            width: 150px;
+            float: left;
+            height: 50px;
+            background-color: lightcoral;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Baza: <div id="databaseName"></div>
+    </header>
+    <div id="addDatabase">Dodaj bazę danych</div>
+    <div id="removeDatabase">Usuń bierzącą bazę danych</div>
+    <div id="databases">
+    </div>
+    <div id="addCollection">Dodaj kolekcję</div>
+    <div id="removeCollection">Usuń bierzącą kolekcję</div>
+    <div id="collections"></div>
+
+    <textarea id="collection"></textarea>
+</body>
+
+</html>
